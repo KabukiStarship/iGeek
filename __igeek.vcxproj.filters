@@ -2,20 +2,38 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="./">
-      <UniqueIdentifier>{3aa804bd-2649-4725-b35b-24533a68cb94}</UniqueIdentifier>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="./\_seams">
-      <UniqueIdentifier>{c9aea5e0-8970-4946-b65f-adac3979ec01}</UniqueIdentifier>
+      <UniqueIdentifier>{88d27d96-2f20-40fc-976a-1e83c0f7357e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="environment.h">
+      <Filter>./</Filter>
+    </ClInclude>
+    <ClInclude Include="_seams\release.h">
+      <Filter>./\_seams</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_seams\_release.inl">
+      <Filter>./\_seams</Filter>
+    </None>
+    <None Include="_seams\_seams.inl">
+      <Filter>./\_seams</Filter>
+    </None>
+    <None Include="_seams\_undef.inl">
+      <Filter>./\_seams</Filter>
+    </None>
     <None Include="_seams\00.core.inl">
       <Filter>./\_seams</Filter>
     </None>
     <None Include="_seams\readme.md">
       <Filter>./\_seams</Filter>
     </None>
-    <None Include="_seams\_seams.inl">
+    <None Include="_seams\_debug.inl">
       <Filter>./\_seams</Filter>
     </None>
   </ItemGroup>
@@ -28,13 +46,5 @@
     <ClCompile Include="_seams\main.cpp">
       <Filter>./\_seams</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="_seams\release.h">
-      <Filter>./\_seams</Filter>
-    </ClInclude>
-    <ClInclude Include="environment.h">
-      <Filter>./</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
